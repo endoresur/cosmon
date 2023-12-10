@@ -1,0 +1,49 @@
+@use './mixins.scss' as *;
+
+@mixin header1 {
+  font-weight: 700;
+  font-size: rem(80);
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  line-height: 110%;
+
+  @include mobile {
+    font-size: rem(36);
+  }
+}
+
+@mixin header2 {
+  font-weight: 400;
+  font-size: rem(64);
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  line-height: 110%;
+
+  @include mobile {
+    font-size: rem(36);
+  }
+}
+
+@mixin body1 {
+  font-weight: 400;
+  font-size: rem(22);
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  line-height: 150%;
+
+  @include mobile {
+    font-size: rem(36);
+  }
+}
+
+@mixin body2 {
+  font-weight: 400;
+  font-size: rem(18);
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  line-height: 150%;
+
+  @include mobile {
+    font-size: rem(36);
+  }
+}

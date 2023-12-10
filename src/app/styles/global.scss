@@ -1,0 +1,126 @@
+@use 'src/styles/mixins' as *;
+@use 'src/styles/variables/breakpoints.module.scss' as *;
+
+
+:root {
+  color: var(--text-primary);
+  font-size: 4.3vw;
+  font-family: serif;
+  font-family: 'DM Sans', sans-serif;
+  direction: ltr;
+
+  background-color: var(--background);
+
+
+  // @media screen and (orientation: landscape) and (max-width: $mobile) {
+  //   font-size: 3vw;
+  // }
+
+  // @media screen and (min-width: $mobile) {
+  //   font-size: 1.2vw;
+  // }
+
+  // @media screen and (width >= 1360px) {
+  //   font-size: 16px;
+  // }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* stylelint-disable-next-line selector-id-pattern */
+#__next {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+
+  overflow-x: clip;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+}
+
+button,
+*[role='button'] {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+input,
+textarea,
+label,
+button,
+*[role='button'],
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input {
+  border-radius: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: var(--text-primary) !important;
+
+  -webkit-background-clip: text;
+}
+
+.input-black:-webkit-autofill,
+.input-black:-webkit-autofill:hover,
+.input-black:-webkit-autofill:focus,
+.input-black:-webkit-autofill:active {
+  -webkit-text-fill-color: var(--primary-black) !important;
+
+  -webkit-background-clip: text;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
